@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RShare — Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<header class="topbar">
+<div class="brand">
+<a class="logo-link" href="index.html"><div class="logoMark">R</div></a>
+<div class="brandText">RShare <small class="muted">Teal•Gold</small></div>
+</div>
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="rider.html" class="nav-link">Rider</a>
+<a href="driver.html" class="nav-link">Driver</a>
+</nav>
+</header>
+<main class="center">
+<div class="card">
+<h1>Welcome to <span class="accent">RShare</span></h1>
+<p class="muted">Choose a mode below. Requests sync live between Rider & Driver (same device/localStorage).</p>
+<div class="actions-row">
+<a href="rider.html"><button class="btn primary">I'm a Rider</button></a>
+<a href="driver.html"><button class="btn ghost">I'm a Driver</button></a>
+<button class="btn ghost" onclick="quickSample()">Quick sample</button>
+</div>
+</div>
+</main>
+<footer class="footer">RShare • Teal & Gold • Local demo</footer>
+<script src="app.js"></script>
+</body>
+</html>

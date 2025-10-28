@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RShare — Rider</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<header class="topbar">
+<div class="brand">
+<a class="logo-link" href="index.html"><div class="logoMark">R</div></a>
+<div class="brandText">RShare <small class="muted">Rider</small></div>
+</div>
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="rider.html" class="nav-link">Rider</a>
+<a href="driver.html" class="nav-link">Driver</a>
+</nav>
+</header>
+<main class="page fade">
+<div class="card form-card">
+<h2>Request a Ride</h2>
+<p class="muted">Fill trip details. Inputs are glassmorphic and visible.</p>
+<form id="riderForm">
+<div class="two-col">
+<label>From<input id="r_from" required></label>
+<label>To<input id="r_to" required></label>
+</div>
+<div class="two-col">
+<label>Name<input id="r_name" required></label>
+<label>Contact<input id="r_contact" required></label>
+</div>
+<label>ID (Aadhaar / PAN / Licence)<input id="r_id" required></label>
+<div class="actions-row">
+<button class="btn primary" type="submit">Request Ride</button>
+<button class="btn ghost" type="button" id="r_cancel">Cancel</button>
+</div>
+</form>
+
+
+<h3 style="margin-top:18px">Active Requests (All Riders)</h3>
+<div id="requestsList" class="list"></div>
+
+
+<h3 style="margin-top:14px">Available Empty Rides (Drivers)</h3>
+<div id="driverPosts" class="list"></div>
+
+
+<h3 style="margin-top:14px">Completed (This device)</h3>
+<div id="riderHistory" class="list"></div>
+</div>
+</main>
+<footer class="footer">RShare — Rider</footer>
+<script src="app.js"></script>
+</body>
+</html>

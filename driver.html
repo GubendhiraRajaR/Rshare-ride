@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RShare — Driver</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bgCanvas"></canvas>
+<header class="topbar">
+<div class="brand">
+<a class="logo-link" href="index.html"><div class="logoMark">R</div></a>
+<div class="brandText">RShare <small class="muted">Driver</small></div>
+</div>
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="rider.html" class="nav-link">Rider</a>
+<a href="driver.html" class="nav-link">Driver</a>
+</nav>
+</header>
+<main class="page fade">
+<div class="card form-card">
+<h2>Driver Dashboard</h2>
+<p class="muted">Sign up / publish empty rides / accept or close requests. All updates sync live with Rider page.</p>
+<div class="actions-row">
+<button id="signupBtn" class="btn primary">Sign Up / Edit</button>
+<button id="logoutBtn" class="btn ghost" style="display:none">Logout</button>
+<button id="togglePublish" class="btn ghost">Publish Empty Ride</button>
+</div>
+
+
+<div id="publishForm" class="publish hidden" style="margin-top:12px">
+<div class="two-col">
+<label>From<input id="p_from"></label>
+<label>To<input id="p_to"></label>
+</div>
+<div style="margin-top:8px" class="actions-row"><button id="doPublish" class="btn primary">Publish</button></div>
+</div>
+
+
+<h3 style="margin-top:16px">Live Rider Requests</h3>
+<div id="driverRequests" class="list"></div>
+
+
+<h3 style="margin-top:14px">Your Published Empty Rides</h3>
+<div id="publishedList" class="list"></div>
+
+
+<h3 style="margin-top:14px">Completed Rides (Driver)</h3>
+<div id="driverHistory" class="list"></div>
+
+
+<div style="margin-top:14px;display:flex;gap:8px">
+<button id="exportCsv" class="btn ghost">Export CSV</button>
+<button id="exportPdf" class="btn ghost">Printable</button>
+<button id="clearHistory" class="btn ghost">Clear History</button>
+</div>
+</div>
+</main>
+<footer class="footer">RShare — Driver</footer>
+<script src="app.js"></script>
+</body>
+</html>
